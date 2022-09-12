@@ -7,3 +7,8 @@ input_list = []
 for i in range(0, n):
     input_list.append(random.randint(0,10))
 print(input_list)
+
+summ = 0
+for i in range(1, n, 2):
+    summ += input_list[i]
+print('Сумма: ', summ)
