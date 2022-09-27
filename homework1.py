@@ -3,11 +3,17 @@
 
 import random
 n = 10
-input_list = []
-for i in range(0, n):
-    input_list.append(random.randint(0,10))
+# input_list = []
+# for i in range(0, n):
+#     input_list.append(random.randint(0,10))
+# print(input_list)
+# summ = 0
+# for i in input_list[1::2]:
+#     summ += i
+# print('Сумма: ', summ)
+
+# Вариант 2 - с использование LC
+input_list = [random.randint(0,10) for i in range(0, n)]
+
 print(input_list)
-summ = 0
-for i in input_list[1::2]:
-    summ += i
-print('Сумма: ', summ)
+print('Сумма: ', sum(i for i in input_list[1::2]))
