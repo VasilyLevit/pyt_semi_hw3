@@ -9,8 +9,6 @@ input_list = [2, 3, 4, 5, 6]
 #     result.append(input_list[i] * input_list[-i-1])
 # print(result)
 
-result = []
+# Вариант 2 - с использованием LC
 len_list = len(input_list)
-# result = [input_list[i] * input_list[-i-1] for i in range(len_list - len_list // 2)]
-# print(result)
 print(list(input_list[i] * input_list[-i-1] for i in range(len_list - len_list // 2)))
